@@ -7,12 +7,12 @@ from streamlit_option_menu import option_menu
 #import required Datasets
 @st.cache_data
 def datasets():
-    role_dataset = pd.read_csv(r"C:\Project\Role-Recommendation\datasets\Role_description.csv")
-    skills_dataset = pd.read_excel(r"C:\Project\Role-Recommendation\datasets\skills_dataset.xlsx")
-    job_dataset = pd.read_csv(r"C:\Project\Role-Recommendation\datasets\Job.csv")
-    resume_dataset =pd.read_csv(r"C:\Project\Role-Recommendation\datasets\Resume_dataset.csv")
-    qualification_dataset = pd.read_csv(r"C:\Project\Role-Recommendation\datasets\qualification.csv")
-    country_dataset = pd.read_csv(r"C:\Project\Role-Recommendation\datasets\country.csv")
+    role_dataset = pd.read_csv(r"..\datasets\Role_description.csv")
+    skills_dataset = pd.read_excel(r"..\datasets\skills_dataset.xlsx")
+    job_dataset = pd.read_csv(r"..\datasets\Job.csv")
+    resume_dataset =pd.read_csv(r"..\datasets\Resume_dataset.csv")
+    qualification_dataset = pd.read_csv(r"..\datasets\qualification.csv")
+    country_dataset = pd.read_csv(r"..\datasets\country.csv")
 
     return role_dataset,skills_dataset,job_dataset,resume_dataset,qualification_dataset,country_dataset
 
